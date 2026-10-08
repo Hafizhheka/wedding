@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>MomenBahagia Studio - Dashboard Pengantin &amp; Acara</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-container": "#77292c",
+          "on-surface": "#111c2d",
+          "tertiary": "#006c4a",
+          "on-error-container": "#93000a",
+          "outline": "#807663",
+          "secondary-container": "#fe9292",
+          "error": "#ba1a1a",
+          "on-tertiary": "#ffffff",
+          "secondary": "#9a4344",
+          "secondary-fixed-dim": "#ffb3b1",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#400108",
+          "surface": "#f9f9ff",
+          "inverse-surface": "#263143",
+          "outline-variant": "#d1c5af",
+          "primary-container": "#c59b27",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#473500",
+          "surface-container": "#e7eeff",
+          "inverse-primary": "#eec14b",
+          "primary-fixed-dim": "#eec14b",
+          "surface-container-high": "#dee8ff",
+          "surface-container-highest": "#d8e3fb",
+          "on-tertiary-fixed-variant": "#005137",
+          "background": "#f9f9ff",
+          "on-tertiary-fixed": "#002114",
+          "error-container": "#ffdad6",
+          "surface-bright": "#f9f9ff",
+          "surface-container-low": "#f0f3ff",
+          "surface-container-lowest": "#ffffff",
+          "primary-fixed": "#ffdf98",
+          "tertiary-fixed-dim": "#68dba9",
+          "secondary-fixed": "#ffdad8",
+          "surface-dim": "#cfdaf2",
+          "on-secondary-fixed-variant": "#7b2c2f",
+          "primary": "#775a00",
+          "tertiary-fixed": "#85f8c4",
+          "on-surface-variant": "#4e4635",
+          "inverse-on-surface": "#ecf1ff",
+          "on-secondary": "#ffffff",
+          "on-tertiary-container": "#00402a",
+          "on-primary-fixed-variant": "#5a4300",
+          "tertiary-container": "#3cb484",
+          "on-background": "#111c2d",
+          "surface-variant": "#d8e3fb",
+          "surface-tint": "#775a00",
+          "on-primary-fixed": "#251a00"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-mobile": "1rem",
+          "space-lg": "1.5rem",
+          "gutter-mobile": "1rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "margin": "2rem",
+          "space-sm": "0.5rem",
+          "space-xl": "2.5rem"
+        },
+        "fontFamily": {
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "subheading-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero-mobile": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "subheading-lg": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "68px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col border-r border-outline-variant/30 shadow-[0_2px_12px_-2px_rgba(30,41,59,0.04)]"><div class="h-20 px-6 flex items-center gap-3 border-b border-outline-variant/20"><img alt="MomenBahagia Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UwwglnVkj4xbkW_O0Hh2eK7biDwrwl9nm0ag_dt6MPBhedzGz_JaoLKIS_m5cZzT7GV4GfLxrenRuLDU5-d2mXLYHXSaZtwGuWPL_qPaRZeRfSwIKqqw1wfoCH13h-4VczJrOSXR7jBl5hV33fwER_3x2vBSBlurrEKPvMDdDq9fZL4C9qWyz1GeMOUN-N1xTEH2QD8I4g31vzRT5Og2tuV2x53dPbQyADZcuI-48"/><span class="font-headline-sm text-headline-sm text-primary font-bold">MomenBahagia</span></div><div class="px-4 py-4"><a class="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-md text-label-md font-semibold shadow-[0_4px_14px_rgba(197,155,39,0.25)] hover:brightness-105 transition-all" data-path="buat-undangan" href="#"><span class="material-symbols-outlined text-lg leading-none">add_circle</span>Buat Undangan</a></div><nav class="flex-1 px-3 space-y-1 overflow-y-auto" data-active-classes="bg-surface-container font-semibold text-primary"><div class="px-3 pt-2 pb-1 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant/70">Manajemen Acara</div><a aria-current="page" class="flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors bg-surface-container font-semibold text-primary" data-path="dashboard-undangan" href="#"><span class="material-symbols-outlined text-xl">dashboard</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="buku-tamu-rsvp" href="#"><span class="material-symbols-outlined text-xl">how_to_reg</span><span class="font-label-md text-label-md">Tamu &amp; RSVP</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="amplop-digital" href="#"><span class="material-symbols-outlined text-xl">wallet</span><span class="font-label-md text-label-md">Amplop &amp; Kado</span></a><div class="px-3 pt-4 pb-1 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant/70">Desain &amp; Konten</div><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="katalog-template" href="#"><span class="material-symbols-outlined text-xl">palette</span><span class="font-label-md text-label-md">Template &amp; Tema</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="pengaturan-acara" href="#"><span class="material-symbols-outlined text-xl">tune</span><span class="font-label-md text-label-md">Pengaturan Acara</span></a></nav><div class="p-4 border-t border-outline-variant/20 flex items-center gap-3 bg-surface-container-low/40"><img alt="Profile" class="w-9 h-9 rounded-full object-cover ring-1 ring-outline-variant/60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS184feTGKo2fPzuIyNqs9ShxysJtMTEDjlHfCc03O55E_J3LI0o5STG5yuESSkyN57ti10DhH_lYoKBXobaIrcQna29-zlbSnjK73tQrMpnHO1d43lVJdijoi8oOzUxaDM4iECKThwuNlHS7bncspc4pDPDA9YOLR0L7ie68iYnGFaZkE_RAplkyc_9BuSxg6IhNgRd0h2JZx2lH63eub-GfjIrqvN7qofPxIxOI"/><div class="flex-1 min-w-0"><p class="font-label-md text-label-md text-on-surface truncate">Dian &amp; Dimas</p><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Paket Eksklusif</p></div><button aria-label="Keluar" class="text-on-surface-variant hover:text-error transition-colors"><span class="material-symbols-outlined text-xl">logout</span></button></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/80 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_2px_8px_-2px_rgba(30,41,59,0.04)] z-40 flex items-center justify-between px-8"><nav class="hidden xl:flex items-center gap-6" data-active-classes="text-primary font-semibold border-b-2 border-primary-container pb-1"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="beranda" href="#">Beranda</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="fitur" href="#">Fitur</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="katalog-template" href="#">Template</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="harga" href="#">Harga</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="buat-undangan" href="#">Buat Undangan</a></nav><div class="flex items-center gap-4 ml-auto"><button aria-label="Notifikasi Acara" class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl leading-none">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-3 pl-3 border-l border-outline-variant/40"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS184feTGKo2fPzuIyNqs9ShxysJtMTEDjlHfCc03O55E_J3LI0o5STG5yuESSkyN57ti10DhH_lYoKBXobaIrcQna29-zlbSnjK73tQrMpnHO1d43lVJdijoi8oOzUxaDM4iECKThwuNlHS7bncspc4pDPDA9YOLR0L7ie68iYnGFaZkE_RAplkyc_9BuSxg6IhNgRd0h2JZx2lH63eub-GfjIrqvN7qofPxIxOI"/><span class="font-label-md text-label-md text-on-surface hidden sm:inline">Dian &amp; Dimas</span><span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span></div></div></header><main class="relative pt-20 w-full px-8 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Builder Sub-Header & Status Ribbon -->
+<div class="flex flex-wrap items-center justify-between gap-4 py-4 px-2 -mt-4 mb-6 bg-surface-container-low rounded-xl shadow-sm">
+<div class="flex items-center gap-4 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-2xl">auto_fix_high</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Admin Studio — Wedding Template Builder</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm uppercase font-semibold">Live CMS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+          Mode Edit Template: <strong class="text-on-surface font-semibold">Royal Javanese Heritage v2.4</strong> • Terakhir disimpan 2 menit lalu
+        </p>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex items-center gap-3">
+<div class="flex items-center bg-surface-container rounded-lg p-1">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-primary font-label-md text-label-md bg-surface shadow-sm transition-all" id="viewPhoneBtn" onclick="setCanvasMode('phone')">
+<span class="material-symbols-outlined text-base">smartphone</span>
+<span>Mobile 390px</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" id="viewDesktopBtn" onclick="setCanvasMode('desktop')">
+<span class="material-symbols-outlined text-base">desktop_windows</span>
+<span>Desktop Frame</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-all shadow-sm">
+<span class="material-symbols-outlined text-lg">visibility</span>
+<span>Preview Live</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all shadow-sm">
+<span class="material-symbols-outlined text-lg">save</span>
+<span>Simpan Draf</span>
+</button>
+<button class="flex items-center gap-1.5 px-5 py-2 rounded-lg bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-md text-label-md font-semibold hover:brightness-105 shadow-md transition-all">
+<span class="material-symbols-outlined text-lg">rocket_launch</span>
+<span>Publikasikan Template</span>
+</button>
+</div>
+</div>
+<!-- Three-Column Builder Workspace -->
+<div class="grid grid-cols-12 gap-6 items-start pb-12">
+<!-- LEFT PANEL: Component & Section Builder (Col 3) -->
+<div class="col-span-12 lg:col-span-3 flex flex-col gap-4">
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col">
+<!-- Sub-Tabs -->
+<div class="grid grid-cols-2 gap-1 p-1 bg-surface-container rounded-lg mb-4">
+<button class="py-1.5 text-center font-label-md text-label-md rounded-md bg-surface text-primary font-bold shadow-sm">Section Acara</button>
+<button class="py-1.5 text-center font-label-md text-label-md rounded-md text-on-surface-variant hover:text-on-surface">Tema &amp; Font</button>
+</div>
+<div class="flex items-center justify-between mb-3 px-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Daftar Modul (8 Aktif)</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Tersinkronisasi</span>
+</div>
+<!-- Draggable Section List -->
+<div class="space-y-2" id="sectionReorderList">
+<!-- Section Item 1: Active -->
+<div class="p-3 bg-surface-container rounded-lg shadow-sm flex items-center justify-between cursor-pointer group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-outline-variant text-lg cursor-grab">drag_indicator</span>
+<div class="w-7 h-7 rounded-md bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-base">wallpaper</span>
+</div>
+<div class="truncate">
+<p class="font-label-md text-label-md text-primary font-bold truncate">Hero Cover &amp; Gembok</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Buka Undangan, Countdown</p>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-lg">check_circle</span>
+</div>
+</div>
+<!-- Section Item 2: Selected -->
+<div class="p-3 bg-primary-fixed/30 rounded-lg shadow-sm flex items-center justify-between cursor-pointer group">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-primary text-lg cursor-grab">drag_indicator</span>
+<div class="w-7 h-7 rounded-md bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-base">favorite</span>
+</div>
+<div class="truncate">
+<p class="font-label-md text-label-md text-on-surface font-bold truncate">Profil Mempelai Pasangan</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Raden &amp; Anindya (Foto + IG)</p>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-primary text-on-primary font-semibold">Aktif</span>
+</div>
+</div>
+<!-- Section Item 3 -->
+<div class="p-3 bg-surface-container-low rounded-lg shadow-sm flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-outline-variant text-lg cursor-grab">drag_indicator</span>
+<div class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-base">event</span>
+</div>
+<div class="truncate">
+<p class="font-label-md text-label-md text-on-surface truncate">Rangkaian Acara (Akad &amp; Resepsi)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Timeline, Jam, Kalender</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-base">visibility</span>
+</div>
+<!-- Section Item 4 -->
+<div class="p-3 bg-surface-container-low rounded-lg shadow-sm flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-outline-variant text-lg cursor-grab">drag_indicator</span>
+<div class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-base">pin_drop</span>
+</div>
+<div class="truncate">
+<p class="font-label-md text-label-md text-on-surface truncate">Google Maps &amp; Live Stream</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Lokasi Gedung &amp; Navigasi</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-base">visibility</span>
+</div>
+<!-- Section Item 5 -->
+<div class="p-3 bg-surface-container-low rounded-lg shadow-sm flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-outline-variant text-lg cursor-grab">drag_indicator</span>
+<div class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-base">photo_library</span>
+</div>
+<div class="truncate">
+<p class="font-label-md text-label-md text-on-surface truncate">Galeri Foto &amp; Video Prewed</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Grid Masonry 12 Foto</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-base">visibility</span>
+</div>
+<!-- Section Item 6 -->
+<div class="p-3 bg-surface-container-low rounded-lg shadow-sm flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-outline-variant text-lg cursor-grab">drag_indicator</span>
+<div class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-base">history_edu</span>
+</div>
+<div class="truncate">
+<p class="font-label-md text-label-md text-on-surface truncate">Cerita Cinta (Love Story)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">3 Kisah Perjalanan</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-base">visibility</span>
+</div>
+<!-- Section Item 7 -->
+<div class="p-3 bg-surface-container-low rounded-lg shadow-sm flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-outline-variant text-lg cursor-grab">drag_indicator</span>
+<div class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-base">credit_card</span>
+</div>
+<div class="truncate">
+<p class="font-label-md text-label-md text-on-surface truncate">Amplop Digital &amp; QRIS</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Bank BCA, Mandiri &amp; Hadiah</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-base">visibility</span>
+</div>
+<!-- Section Item 8 -->
+<div class="p-3 bg-surface-container-low rounded-lg shadow-sm flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-outline-variant text-lg cursor-grab">drag_indicator</span>
+<div class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-base">forum</span>
+</div>
+<div class="truncate">
+<p class="font-label-md text-label-md text-on-surface truncate">Ucapan &amp; Doa RSVP</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Form Interaktif &amp; Komentar</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-base">visibility</span>
+</div>
+</div>
+<button class="mt-4 w-full py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-all">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+<span>+ Tambah Section Baru</span>
+</button>
+</div>
+<!-- Quick Audio Setting Card -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">music_note</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Musik Undangan</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] bg-tertiary-container/30 text-tertiary font-bold">Autoplay ON</span>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="truncate">
+<p class="font-label-md text-label-md text-on-surface truncate">Gending Jawa - Kebo Giro.mp3</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Durasi: 03:42 • 4.8 MB</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CENTER PANEL: Live Phone & Interactive Invitation Canvas (Col 5) -->
+<div class="col-span-12 lg:col-span-5 flex flex-col items-center">
+<!-- Device Canvas Wrapper -->
+<div class="w-full flex items-center justify-between px-4 py-2 bg-surface-container-low rounded-t-xl">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-2">Preview Kanvas • https://momenbahagia.id/royal-javanese-preview</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-base">refresh</span>
+</button>
+</div>
+<!-- Smartphone Frame Container -->
+<div class="w-full max-w-[420px] bg-surface-dim rounded-b-2xl p-4 shadow-xl flex justify-center transition-all" id="canvasViewport">
+<!-- Smartphone Inner Bezel -->
+<div class="w-full bg-surface-container-lowest rounded-[2.5rem] p-3 shadow-2xl relative overflow-hidden">
+<!-- Screen Glass / Content Wrapper with Inner Scrolling -->
+<div class="w-full rounded-[2rem] bg-[#FAFAF9] overflow-y-auto max-h-[760px] relative scroll-smooth shadow-inner">
+<!-- Dynamic Floating Audio Pill (Micro-Glassmorphism) -->
+<div class="fixed z-30 bottom-8 right-8 bg-surface-container-lowest/85 backdrop-blur-md px-3 py-1.5 rounded-full shadow-lg flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center animate-spin" style="animation-duration: 8s;">
+<span class="material-symbols-outlined text-on-primary text-xs">music_note</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Lir Ilir Gamelan</span>
+</div>
+<!-- SECTION 1: HERO INVITATION COVER -->
+<div class="relative w-full min-h-[460px] flex flex-col items-center justify-center p-6 text-center overflow-hidden bg-gradient-to-b from-surface to-surface-container-low">
+<!-- Decorative SVG Batik Corner Accents -->
+<div class="absolute top-3 left-3 w-12 h-12 text-primary-container opacity-50">
+<svg fill="currentColor" viewbox="0 0 100 100"><path d="M0 0 L100 0 L50 50 Z M0 0 L0 100 L50 50 Z"></path></svg>
+</div>
+<div class="absolute top-3 right-3 w-12 h-12 text-primary-container opacity-50 rotate-90">
+<svg fill="currentColor" viewbox="0 0 100 100"><path d="M0 0 L100 0 L50 50 Z M0 0 L0 100 L50 50 Z"></path></svg>
+</div>
+<!-- Top Ornamental Arch -->
+<div class="w-16 h-1 rounded-full bg-primary-container mb-4"></div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold mb-2">Walimatul Ursy</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2 tracking-tight">Raden &amp; Anindya</h2>
+<p class="font-headline-sm text-headline-sm italic text-outline mb-6">Sabtu, 24 Oktober 2025</p>
+<!-- Hero Couple Image Frame with Golden Filigree Mockup -->
+<div class="w-44 h-56 rounded-full overflow-hidden shadow-xl mb-6 relative">
+<img class="w-full h-full object-cover" data-alt="Intimate editorial portrait of an elegant Indonesian Javanese royal couple dressed in traditional black velvet beskap and kebaya with golden embroidery and traditional blangkon, soft dramatic studio lighting with warm golden tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQTtalUIQyUbAst23DZIRrCRUsMYn_AfTUKLZXFK8Q-XnNSuOiOn0N51Qv5KuRCdeBD_fXwXgtV067nfAuMC_DjLzMSKga9Tf-1bqLURhFmlKdCYOJc-bycJ87G_NeStujQbYbGcoOk9ohjPuIxpQBFPJB2Wer565IOifBVEc9vA28Cht5lV0JtcgYI_GdkrjnL8w7aiyHlBecJGwOOO4_x5ZYzfdt5Z0Tyq3OWj0"/>
+</div>
+<!-- Countdown Quadrant Badge -->
+<div class="grid grid-cols-4 gap-2 w-full max-w-xs mb-4">
+<div class="bg-surface-container-lowest/90 rounded-lg p-2 text-center shadow-sm">
+<p class="font-headline-sm text-headline-sm font-bold text-primary">128</p>
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase">Hari</p>
+</div>
+<div class="bg-surface-container-lowest/90 rounded-lg p-2 text-center shadow-sm">
+<p class="font-headline-sm text-headline-sm font-bold text-primary">14</p>
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase">Jam</p>
+</div>
+<div class="bg-surface-container-lowest/90 rounded-lg p-2 text-center shadow-sm">
+<p class="font-headline-sm text-headline-sm font-bold text-primary">45</p>
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase">Menit</p>
+</div>
+<div class="bg-surface-container-lowest/90 rounded-lg p-2 text-center shadow-sm">
+<p class="font-headline-sm text-headline-sm font-bold text-primary">19</p>
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase">Detik</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">lock_open</span>
+<span>Undangan Resmi Digital</span>
+</div>
+</div>
+<!-- SECTION 2: PROFIL MEMPELAI (ACTIVE INSPECTION HIGHLIGHT) -->
+<div class="p-6 bg-surface-container-lowest relative">
+<div class="text-center mb-6">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Mempelai Mulia</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Pengantin Berbahagia</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dengan memohon rahmat dan ridho Allah SWT untuk menyatukan dua insan</p>
+</div>
+<!-- Groom Card -->
+<div class="p-4 rounded-xl bg-surface-container-low mb-4 text-center">
+<div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Portrait of handsome Javanese groom smiling softly wearing regal dark navy bespoke traditional wedding attire, warm cinematic studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFs9cNbvrp0PSJsNeTCZLaO45xnGCl-Bj-qhU5gXSC8hfRFEgwwKA9siUkzW6HkEh6lXqde1RmxxHcs67xp8QlG6HsnIrh9dLl8EeW7vu0eTDNcWZ2F1ga_0WjjEb3DX-11DTAwwTs8F67tFsP4x2NBscx77RmTcymFGjgJpfbFTnIdhn9M4Vm894j1LwIqtqL_SnVM54NpRlhneDhhzF33ifVpoj71fSKyzk41eE"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Raden Aryo Wicaksono, S.T.</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Putra Pertama dari Bpk. Ir. Bambang Soediro &amp; Ibu Hj. Siti Rahayu</p>
+<div class="inline-flex items-center gap-1 mt-2 text-xs text-primary font-semibold">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+<span>@raden.aryo</span>
+</div>
+</div>
+<!-- Romantic Ampersand Divider -->
+<div class="flex items-center justify-center my-3">
+<span class="w-12 h-[1px] bg-outline-variant/40"></span>
+<span class="font-headline-md text-headline-md italic text-primary px-3">&amp;</span>
+<span class="w-12 h-[1px] bg-outline-variant/40"></span>
+</div>
+<!-- Bride Card -->
+<div class="p-4 rounded-xl bg-surface-container-low text-center">
+<div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Portrait of an enchanting graceful Javanese bride wearing exquisite golden brocade wedding attire with traditional hair jasmine accessories and refined makeup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL0k3LhP6Xc_q51wq_amRzMi2nJy_jAjZ-_x0R4GcBUhEZVdYZmiCnosNHHuFC5hA-DcbS8X9eK5sQyKojaYl5BXFCiri07HrH4zDm-bMQCgsOmFAels6czc6bBuZCW7_KYE9Vr1MENXx1fS0MC7nShbxLHuuTbLr8Q1_Fb2CYv3T5BYy_Tkxf7Pb2ywn7cic3RtSK1Go6rejRsWVYUpO3tUQ0i4cdP6_BpTWmiPo"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Anindya Larasati, M.Psi.</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Putri Kedua dari Bpk. Drs. H. Kunto Wibowo &amp; Ibu Sri Mulyani</p>
+<div class="inline-flex items-center gap-1 mt-2 text-xs text-primary font-semibold">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+<span>@anindya.laras</span>
+</div>
+</div>
+</div>
+<!-- SECTION 3: RANGKAIAN ACARA (EVENT TILES) -->
+<div class="p-6 bg-surface-container-low">
+<div class="text-center mb-5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Hari Bahagia</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Rangkaian Acara</h3>
+</div>
+<div class="space-y-4">
+<!-- Akad Nikah Card -->
+<div class="p-4 bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary-fixed text-on-primary-fixed uppercase">Akad Nikah</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">08.00 - 10.00 WIB</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">Masjid Agung Kraton Surakarta</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Jl. Baluwarti, Ps. Kliwon, Kota Surakarta, Jawa Tengah</p>
+<button class="mt-3 w-full py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm">map</span>
+<span>Buka Google Maps</span>
+</button>
+</div>
+<!-- Resepsi Malam Card -->
+<div class="p-4 bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary-fixed text-on-secondary-fixed uppercase">Resepsi Mulia</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">18.30 - 21.00 WIB</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">Grand Ballroom Sasana Handrawina</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Kompleks Keraton, Baluwarti, Surakarta</p>
+<button class="mt-3 w-full py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span>Simpan di Google Kalender</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SECTION 4: LOVE STORY TIMELINE -->
+<div class="p-6 bg-surface-container-lowest">
+<div class="text-center mb-5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Kisah Kami</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Cerita Kasih</h3>
+</div>
+<div class="space-y-4">
+<div class="p-3.5 bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-[11px] text-primary font-bold">Mei 2021 • Pertemuan Pertama</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">Berjumpa di simposium cagar budaya Yogyakarta, saling bertukar cerita mengenai seni kriya batik keraton.</p>
+</div>
+<div class="p-3.5 bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-[11px] text-primary font-bold">Desember 2023 • Ikrar Lamaran</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">Dengan restu kedua orang tua di Surakarta, ikrar suci ditorehkan bersama cincin pertunangan.</p>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Action Bar in Screen -->
+<div class="p-4 bg-surface-container text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Raden &amp; Anindya Wedding • Powered by MomenBahagia</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Inspector & Content Customizer Panel (Col 4) -->
+<div class="col-span-12 lg:col-span-4 flex flex-col gap-4">
+<!-- Panel Header & Active Section Indicator -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm space-y-5">
+<div class="flex items-center justify-between pb-3 bg-surface-container-low -mx-5 -mt-5 px-5 pt-4 rounded-t-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">tune</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Inspector Komponen</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Section: Profil Mempelai</span>
+</div>
+<!-- Tab Controls inside Inspector -->
+<div class="flex items-center gap-2 p-1 bg-surface-container rounded-lg">
+<button class="flex-1 py-1.5 text-center font-label-md text-label-md rounded-md bg-surface text-primary font-bold shadow-sm">Konten Data</button>
+<button class="flex-1 py-1.5 text-center font-label-md text-label-md rounded-md text-on-surface-variant hover:text-on-surface">Desain Visual</button>
+<button class="flex-1 py-1.5 text-center font-label-md text-label-md rounded-md text-on-surface-variant hover:text-on-surface">Pengaturan SEO</button>
+</div>
+<!-- FORM CONTROLS: Mempelai Pria -->
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">1. Mempelai Pria (Groom)</h4>
+<span class="material-symbols-outlined text-on-surface-variant text-base cursor-pointer">info</span>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Nama Lengkap &amp; Gelar</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-md text-body-md shadow-sm outline-none focus:ring-2 focus:ring-primary-container" type="text" value="Raden Aryo Wicaksono, S.T."/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Nama Panggilan (Hero Display)</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-md text-body-md shadow-sm outline-none focus:ring-2 focus:ring-primary-container" type="text" value="Raden"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Nama Orang Tua Kandung</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-md text-body-md shadow-sm outline-none focus:ring-2 focus:ring-primary-container" type="text" value="Ir. Bambang Soediro &amp; Hj. Siti Rahayu"/>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-14 h-14 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Avatar thumbnail photo preview of Javanese groom in traditional wedding attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc9D7TyVjxeuFmbFEZAnVXzaMxCvwUsTHx1KWOLYcB8beRcrDaR66Vz3EE8-jTTfvKayO3_dezM70IIe6wo4K_S16vuD--1Xvjfq30AIZ6HHkzred3VpZg9EGDgsgkssyGOo8JxSkgEJi_aDJr-CmticGBIz3Erwzx_PoQehgp4jRYRNf8wBiFn2iEiVhQR2hycUrwEdwWYaqRANtr7iDwONEuvRL6ZLawGmS58a4"/>
+</div>
+<div class="flex-1">
+<button class="w-full py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">cloud_upload</span>
+<span>Ganti Foto Groom</span>
+</button>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1">PNG, JPG, WebP. Maks 3MB</p>
+</div>
+</div>
+</div>
+<div class="w-full h-[1px] bg-outline-variant/30"></div>
+<!-- FORM CONTROLS: Mempelai Wanita -->
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">2. Mempelai Wanita (Bride)</h4>
+<span class="material-symbols-outlined text-on-surface-variant text-base cursor-pointer">info</span>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Nama Lengkap &amp; Gelar</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-md text-body-md shadow-sm outline-none focus:ring-2 focus:ring-primary-container" type="text" value="Anindya Larasati, M.Psi."/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Nama Panggilan (Hero Display)</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-md text-body-md shadow-sm outline-none focus:ring-2 focus:ring-primary-container" type="text" value="Anindya"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Nama Orang Tua Kandung</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-md text-body-md shadow-sm outline-none focus:ring-2 focus:ring-primary-container" type="text" value="Drs. H. Kunto Wibowo &amp; Sri Mulyani"/>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-14 h-14 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Avatar thumbnail photo preview of Javanese bride in traditional wedding attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFZufqoDqNHaChiDBdG5E54v5o77TzMHoAcTolweHWx5wkD2xbv9EIZdFQZxC6fTFPuKA88tc9A5HePmBpADlTevBzOLFmfDSb7JvxorYdBJu6pnnXQUzP_EtUFqG1VI612L5Y5oMgtU9gfPMrx_V_kJiqqSUsgWlNNlCNFHX7TAKJ1_bjcHV8fipPk-WU6aPlYQfy3xW3XqmKUHBWJ-nJhfaoYiX1wWiQRdTfHWQ"/>
+</div>
+<div class="flex-1">
+<button class="w-full py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">cloud_upload</span>
+<span>Ganti Foto Bride</span>
+</button>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1">PNG, JPG, WebP. Maks 3MB</p>
+</div>
+</div>
+</div>
+<div class="w-full h-[1px] bg-outline-variant/30"></div>
+<!-- TYPOGRAPHY & PALETTE CONTROLS -->
+<div class="space-y-3">
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">3. Tipografi &amp; Palet Warna</h4>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Font Utama (Headings)</label>
+<div class="p-2.5 rounded-lg bg-surface text-on-surface font-headline-sm text-headline-sm flex items-center justify-between cursor-pointer shadow-sm">
+<span>Playfair Display (Serif)</span>
+<span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Palet Warna Aktif</label>
+<div class="flex items-center gap-2 pt-1">
+<!-- Swatch 1: Royal Gold (Active) -->
+<div class="w-8 h-8 rounded-full bg-primary-container shadow-md flex items-center justify-center cursor-pointer ring-2 ring-primary ring-offset-2">
+<span class="material-symbols-outlined text-on-primary-container text-sm">check</span>
+</div>
+<!-- Swatch 2: Emerald Javanese -->
+<div class="w-8 h-8 rounded-full bg-tertiary shadow-sm cursor-pointer hover:scale-105 transition-transform"></div>
+<!-- Swatch 3: Romantic Blush -->
+<div class="w-8 h-8 rounded-full bg-secondary shadow-sm cursor-pointer hover:scale-105 transition-transform"></div>
+<!-- Swatch 4: Midnight Indigo -->
+<div class="w-8 h-8 rounded-full bg-inverse-surface shadow-sm cursor-pointer hover:scale-105 transition-transform"></div>
+<!-- Custom Color Picker -->
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant cursor-pointer hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-base">palette</span>
+</div>
+</div>
+</div>
+<div class="space-y-1.5 pt-2">
+<div class="flex items-center justify-between text-xs">
+<span class="text-on-surface-variant font-label-sm">Radius Border Ornamen</span>
+<span class="font-bold text-on-surface">16px</span>
+</div>
+<input class="w-full accent-primary" max="32" min="0" type="range" value="16"/>
+</div>
+</div>
+<div class="w-full h-[1px] bg-outline-variant/30"></div>
+<!-- CMS KATALOG & PRICING TIER METADATA -->
+<div class="space-y-3">
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">4. Metadata Katalog &amp; Monetisasi</h4>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Kategori Tradisi</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-md text-body-md shadow-sm outline-none">
+<option selected="">Adat Tradisional • Jawa Keraton</option>
+<option>Adat Tradisional • Sunda Siger</option>
+<option>Adat Tradisional • Minang Modern</option>
+<option>Minimalis Modern • Monokrom</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Akses Tier Paket Pelanggan</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-1.5 rounded-lg text-center font-label-md text-label-md bg-surface-container text-on-surface-variant">FREE</button>
+<button class="py-1.5 rounded-lg text-center font-label-md text-label-md bg-primary-fixed text-on-primary-fixed font-bold shadow-sm">PRO</button>
+<button class="py-1.5 rounded-lg text-center font-label-md text-label-md bg-primary text-on-primary font-bold shadow-sm">PREMIUM</button>
+</div>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Tampilkan di Publik Marketplace</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Calon pengantin dapat memilih tema ini</p>
+</div>
+<div class="w-11 h-6 bg-tertiary-container rounded-full relative cursor-pointer flex items-center p-0.5">
+<div class="w-5 h-5 rounded-full bg-on-tertiary ml-auto shadow-sm"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function setCanvasMode(mode) {
+    const viewport = document.getElementById('canvasViewport');
+    const phoneBtn = document.getElementById('viewPhoneBtn');
+    const desktopBtn = document.getElementById('viewDesktopBtn');
+
+    if (mode === 'desktop') {
+      viewport.classList.remove('max-w-[420px]');
+      viewport.classList.add('max-w-[620px]');
+      
+      desktopBtn.classList.remove('text-on-surface-variant');
+      desktopBtn.classList.add('text-primary', 'bg-surface', 'shadow-sm');
+      
+      phoneBtn.classList.remove('text-primary', 'bg-surface', 'shadow-sm');
+      phoneBtn.classList.add('text-on-surface-variant');
+    } else {
+      viewport.classList.remove('max-w-[620px]');
+      viewport.classList.add('max-w-[420px]');
+      
+      phoneBtn.classList.remove('text-on-surface-variant');
+      phoneBtn.classList.add('text-primary', 'bg-surface', 'shadow-sm');
+      
+      desktopBtn.classList.remove('text-primary', 'bg-surface', 'shadow-sm');
+      desktopBtn.classList.add('text-on-surface-variant');
+    }
+  }
+</script></main></div></body></html>

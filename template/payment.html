@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>MomenBahagia - Platform Undangan Digital Elegan</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-container": "#77292c",
+          "on-surface": "#111c2d",
+          "tertiary": "#006c4a",
+          "on-error-container": "#93000a",
+          "outline": "#807663",
+          "secondary-container": "#fe9292",
+          "error": "#ba1a1a",
+          "on-tertiary": "#ffffff",
+          "secondary": "#9a4344",
+          "secondary-fixed-dim": "#ffb3b1",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#400108",
+          "surface": "#f9f9ff",
+          "inverse-surface": "#263143",
+          "outline-variant": "#d1c5af",
+          "primary-container": "#c59b27",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#473500",
+          "surface-container": "#e7eeff",
+          "inverse-primary": "#eec14b",
+          "primary-fixed-dim": "#eec14b",
+          "surface-container-high": "#dee8ff",
+          "surface-container-highest": "#d8e3fb",
+          "on-tertiary-fixed-variant": "#005137",
+          "background": "#f9f9ff",
+          "on-tertiary-fixed": "#002114",
+          "error-container": "#ffdad6",
+          "surface-bright": "#f9f9ff",
+          "surface-container-low": "#f0f3ff",
+          "surface-container-lowest": "#ffffff",
+          "primary-fixed": "#ffdf98",
+          "tertiary-fixed-dim": "#68dba9",
+          "secondary-fixed": "#ffdad8",
+          "surface-dim": "#cfdaf2",
+          "on-secondary-fixed-variant": "#7b2c2f",
+          "primary": "#775a00",
+          "tertiary-fixed": "#85f8c4",
+          "on-surface-variant": "#4e4635",
+          "inverse-on-surface": "#ecf1ff",
+          "on-secondary": "#ffffff",
+          "on-tertiary-container": "#00402a",
+          "on-primary-fixed-variant": "#5a4300",
+          "tertiary-container": "#3cb484",
+          "on-background": "#111c2d",
+          "surface-variant": "#d8e3fb",
+          "surface-tint": "#775a00",
+          "on-primary-fixed": "#251a00"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-mobile": "1rem",
+          "space-lg": "1.5rem",
+          "gutter-mobile": "1rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "margin": "2rem",
+          "space-sm": "0.5rem",
+          "space-xl": "2.5rem"
+        },
+        "fontFamily": {
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "subheading-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero-mobile": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "subheading-lg": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "68px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_2px_12px_-2px_rgba(30,41,59,0.05),0_1px_3px_-1px_rgba(197,155,39,0.08)] border-b border-outline-variant/40"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-3"><img alt="MomenBahagia Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UwwglnVkj4xbkW_O0Hh2eK7biDwrwl9nm0ag_dt6MPBhedzGz_JaoLKIS_m5cZzT7GV4GfLxrenRuLDU5-d2mXLYHXSaZtwGuWPL_qPaRZeRfSwIKqqw1wfoCH13h-4VczJrOSXR7jBl5hV33fwER_3x2vBSBlurrEKPvMDdDq9fZL4C9qWyz1GeMOUN-N1xTEH2QD8I4g31vzRT5Og2tuV2x53dPbQyADZcuI-48"/><a class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight" data-path="beranda" href="#">MomenBahagia</a></div><nav class="hidden lg:flex items-center gap-8" data-active-classes="text-primary font-semibold border-b-2 border-primary-container pb-1"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="beranda" href="#">Beranda</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="fitur" href="#">Fitur</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="katalog-template" href="#">Template</a><a aria-current="page" class="transition-colors py-1 text-primary font-semibold border-b-2 border-primary-container pb-1" data-path="harga" href="#">Harga</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="buat-undangan" href="#">Buat Undangan</a></nav><div class="flex items-center gap-4"><button aria-label="Notifikasi" class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl leading-none">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><a class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-md text-label-md font-semibold shadow-[0_4px_14px_rgba(197,155,39,0.3)] hover:brightness-105 transition-all" data-path="buat-undangan" href="#">Mulai Gratis</a><div class="flex items-center gap-2 pl-2 border-l border-outline-variant/50"><button aria-label="Menu Profil" class="flex items-center gap-2 p-1 rounded-full hover:bg-surface-container transition-colors focus:outline-none"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS184feTGKo2fPzuIyNqs9ShxysJtMTEDjlHfCc03O55E_J3LI0o5STG5yuESSkyN57ti10DhH_lYoKBXobaIrcQna29-zlbSnjK73tQrMpnHO1d43lVJdijoi8oOzUxaDM4iECKThwuNlHS7bncspc4pDPDA9YOLR0L7ie68iYnGFaZkE_RAplkyc_9BuSxg6IhNgRd0h2JZx2lH63eub-GfjIrqvN7qofPxIxOI"/><span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span></button></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+<!-- Breadcrumb & Top Bar -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+<nav class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<a class="flex items-center gap-1.5 hover:text-primary transition-colors text-on-surface-variant" href="#">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+<span>Kembali ke Dashboard</span>
+</a>
+<span class="material-symbols-outlined text-xs text-outline-variant">chevron_right</span>
+<span class="text-on-surface-variant/80">Upgrade Paket Undangan</span>
+<span class="material-symbols-outlined text-xs text-outline-variant">chevron_right</span>
+<span class="font-semibold text-primary">Pembayaran Midtrans Snap</span>
+</nav>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-sm text-label-sm tracking-wide text-on-surface-variant uppercase">Sesi Transaksi: #MB-2025-88391</span>
+</div>
+</div>
+<!-- Main Payment Shell: Two Column Asymmetric Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: Order Summary & Coupon (5 cols on lg) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Package Details Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 shadow-sm relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-36 h-36 rounded-full bg-primary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between gap-4 mb-5">
+<div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm uppercase font-bold tracking-wider mb-2">
+<span class="material-symbols-outlined text-xs">diamond</span> Rekomendasi Favorit
+              </span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Paket PRO</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Unlimited Guest &amp; Custom Domain Premium</p>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">Rp 199.000</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant/70">Sekali Bayar</span>
+</div>
+</div>
+<!-- Package Photo Showcase Visual -->
+<div class="rounded-lg overflow-hidden relative mb-6 shadow-sm">
+<img class="w-full h-36 object-cover object-center" data-alt="Warm modern Indonesian wedding couple in elegant traditional modern attire smiling intimately during solemn prewedding photoshoot under warm champagne natural studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk_E3JS7ROkvXJWCna0rybdKN4Q4zm36C-bt4nhO5HgKKVkq6-GybBfTEoyVbPqqzmB2hnMD6OxmwExnOCUQ11GoWQ0AZ4Y9hY_GqMPMLiEBudBvOiGEloYN7_-E_M0z-Fs86r6Uy4IddDEkcwzA9LkIvTiwKEcEhmIU_SIGzRpkMjEWg39CKu_mgBzT-zIlz2xgp8tZkVk8yAoNNYL_wqXs5fnApPhx_n0GyOdG4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-3.5">
+<div class="flex items-center gap-2 text-surface">
+<span class="material-symbols-outlined text-sm text-primary-fixed">verified</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface">Undangan Aktif Selamanya Tanpa Batas Masa</span>
+</div>
+</div>
+</div>
+<!-- Feature List -->
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-3">Keunggulan Spesial Paket:</h3>
+<ul class="space-y-2.5 mb-6">
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface">
+<span class="w-5 h-5 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">check</span>
+</span>
+<span><strong>Unlimited Tamu</strong> &amp; blast pesan WhatsApp terformat</span>
+</li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface">
+<span class="w-5 h-5 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">check</span>
+</span>
+<span><strong>Amplop Digital</strong> otomatis terhubung QRIS &amp; Multi-Rekening</span>
+</li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface">
+<span class="w-5 h-5 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">check</span>
+</span>
+<span>Custom Audio Musik Latar &amp; <strong>20 Foto Galeri HD</strong></span>
+</li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface">
+<span class="w-5 h-5 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">check</span>
+</span>
+<span>Bebas Tentukan Nama Subdomain Acara (<em>momen.link/nama-anda</em>)</span>
+</li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface">
+<span class="w-5 h-5 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">check</span>
+</span>
+<span>Export Rekap Kehadiran Tamu (Excel / Google Sheet)</span>
+</li>
+</ul>
+<!-- Promo Voucher Section -->
+<div class="bg-surface-container-low rounded-lg p-4 mb-6">
+<div class="flex items-center justify-between mb-2">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5" for="promoInput">
+<span class="material-symbols-outlined text-primary text-base">loyalty</span>
+                Kode Voucher Promo
+              </label>
+<span class="font-label-sm text-label-sm text-tertiary font-bold tracking-wide">HEMAT RP 20.000</span>
+</div>
+<div class="flex gap-2">
+<div class="relative flex-1">
+<input class="w-full bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg px-3 py-2.5 uppercase font-semibold focus:outline-none focus:ring-2 focus:ring-primary-container" id="promoInput" type="text" value="NIKAHBAHAGIA"/>
+<span class="material-symbols-outlined text-tertiary absolute right-2.5 top-1/2 -translate-y-1/2 text-lg">check_circle</span>
+</div>
+<button class="px-4 py-2.5 bg-surface-container text-on-surface font-label-md text-label-md rounded-lg font-semibold hover:bg-surface-container-high transition-colors" id="btnPromo">
+                Terpasang
+              </button>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">celebration</span> Kupon NIKAHBAHAGIA aktif: Diskon Rp 20.000 berhasil dipotong.
+            </p>
+</div>
+<!-- Price Calculation Breakdown -->
+<div class="space-y-3 pt-4 bg-surface-container-lowest">
+<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
+<span>Subtotal Paket Undangan</span>
+<span>Rp 199.000</span>
+</div>
+<div class="flex justify-between font-body-md text-body-md text-tertiary font-semibold">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">high_res</span> Potongan Kupon (NIKAHBAHAGIA)
+              </span>
+<span>- Rp 20.000</span>
+</div>
+<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span>Biaya Layanan Midtrans</span>
+<span class="material-symbols-outlined text-xs text-on-surface-variant/60" title="Biaya pemrosesan payment gateway">help</span>
+</span>
+<span>Rp 2.500</span>
+</div>
+<div class="h-px bg-surface-container my-3"></div>
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-subheading-lg text-subheading-lg font-bold text-on-surface block">Total Tagihan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Termasuk PPN &amp; Biaya Gateway</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md font-bold text-primary">Rp 181.500</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Security and Guarantee Cards -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm space-y-3.5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">bolt</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Aktivasi Otomatis 1 Detik</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Undangan digital langsung aktif tanpa perlu menunggu konfirmasi manual CS.</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">security</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Lisensi Resmi Bank Indonesia</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Transaksi dilindungi enkripsi 256-bit standar PCI-DSS Level 1 Midtrans.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Midtrans Snap Interactive Modal Experience (7 cols on lg) -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- The Midtrans Snap Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-lg overflow-hidden relative">
+<!-- Midtrans Official Top Branding Header -->
+<div class="bg-inverse-surface text-inverse-on-surface px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<!-- Midtrans Typographic Logo badge -->
+<div class="flex items-center gap-1.5 bg-surface-container-lowest/10 px-2.5 py-1 rounded">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-headline-sm text-headline-sm font-bold tracking-tighter text-surface-container-lowest leading-none">midtrans</span>
+</div>
+<div class="flex items-center gap-1.5 text-surface-dim font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-tertiary-fixed">lock</span>
+<span>Snap 256-Bit SSL Secured</span>
+</div>
+</div>
+<!-- Countdown Timer -->
+<div class="flex items-center gap-2 bg-surface-container-lowest/15 px-3 py-1 rounded-full text-inverse-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">schedule</span>
+<span class="font-body-sm text-body-sm text-surface-dim">Selesaikan dalam:</span>
+<span class="font-label-md text-label-md font-bold tracking-widest text-primary-fixed" id="countdownTimer">23:59:45</span>
+</div>
+</div>
+<!-- Transaction ID Bar -->
+<div class="bg-surface-container-low px-6 py-3 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span>Merchant: <strong>MomenBahagia Official</strong></span>
+</div>
+<div class="font-mono text-xs">ORDER ID: MB-INV-992014</div>
+</div>
+<!-- Payment Tabs Nav -->
+<div class="flex overflow-x-auto bg-surface-container-lowest p-2 gap-2 border-b border-surface-container">
+<button class="pay-tab flex-1 min-w-[130px] flex items-center justify-center gap-2 py-3 px-3 rounded-lg text-left transition-all bg-primary-fixed text-on-primary-fixed font-semibold shadow-sm" id="tab-qris" onclick="switchTab('qris')">
+<span class="material-symbols-outlined text-lg">qr_code_2</span>
+<div class="leading-tight">
+<div class="font-label-md text-label-md">GoPay / QRIS</div>
+<div class="font-body-sm text-body-sm opacity-80 text-xs">Instan &amp; Gratis</div>
+</div>
+</button>
+<button class="pay-tab flex-1 min-w-[130px] flex items-center justify-center gap-2 py-3 px-3 rounded-lg text-left transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" id="tab-va" onclick="switchTab('va')">
+<span class="material-symbols-outlined text-lg">account_balance</span>
+<div class="leading-tight">
+<div class="font-label-md text-label-md">Virtual Account</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-xs">BCA, Mandiri, BNI</div>
+</div>
+</button>
+<button class="pay-tab flex-1 min-w-[130px] flex items-center justify-center gap-2 py-3 px-3 rounded-lg text-left transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" id="tab-cc" onclick="switchTab('cc')">
+<span class="material-symbols-outlined text-lg">credit_card</span>
+<div class="leading-tight">
+<div class="font-label-md text-label-md">Kartu Kredit</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-xs">Visa / Mastercard</div>
+</div>
+</button>
+<button class="pay-tab flex-1 min-w-[130px] flex items-center justify-center gap-2 py-3 px-3 rounded-lg text-left transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" id="tab-cstore" onclick="switchTab('cstore')">
+<span class="material-symbols-outlined text-lg">storefront</span>
+<div class="leading-tight">
+<div class="font-label-md text-label-md">Gerai Retail</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-xs">Indomaret / Alfa</div>
+</div>
+</button>
+</div>
+<!-- Dynamic Panel 1: GoPay / QRIS Content (Default Active) -->
+<div class="tab-panel p-6 sm:p-8 flex flex-col items-center text-center" id="panel-qris">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm mb-4">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+              QRIS Dinamis Siap Dipindai
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">Scan QRIS Menggunakan Aplikasi Favorit Anda</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md mb-6">Buka BCA Mobile, GoPay, OVO, Dana, ShopeePay, LinkAja, atau Mobile Banking lainnya yang mendukung standar QRIS Nasional.</p>
+<!-- QR Code Card Box -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-md flex flex-col items-center w-full max-w-xs relative group">
+<div class="w-full flex items-center justify-between pb-3 mb-3 border-b border-surface-container">
+<span class="font-label-md text-label-md font-bold text-on-surface tracking-wider">QRIS STANDAR BI</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">NMID: ID102003928172</span>
+</div>
+<!-- Inline Geometric Dynamic SVG QR Representation -->
+<div class="w-56 h-56 bg-surface-container-lowest p-2 rounded-xl flex items-center justify-center shadow-inner relative">
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewbox="0 0 200 200">
+<!-- Positioning squares -->
+<rect fill="currentColor" height="50" rx="4" width="50" x="10" y="10"></rect>
+<rect fill="#ffffff" height="34" rx="2" width="34" x="18" y="18"></rect>
+<rect fill="currentColor" height="18" rx="2" width="18" x="26" y="26"></rect>
+<rect fill="currentColor" height="50" rx="4" width="50" x="140" y="10"></rect>
+<rect fill="#ffffff" height="34" rx="2" width="34" x="148" y="18"></rect>
+<rect fill="currentColor" height="18" rx="2" width="18" x="156" y="26"></rect>
+<rect fill="currentColor" height="50" rx="4" width="50" x="10" y="140"></rect>
+<rect fill="#ffffff" height="34" rx="2" width="34" x="18" y="148"></rect>
+<rect fill="currentColor" height="18" rx="2" width="18" x="26" y="156"></rect>
+<!-- Data modules pattern -->
+<rect height="12" width="12" x="70" y="15"></rect>
+<rect height="12" width="12" x="90" y="15"></rect>
+<rect height="8" width="18" x="110" y="15"></rect>
+<rect height="12" width="22" x="70" y="35"></rect>
+<rect height="12" width="12" x="100" y="35"></rect>
+<rect height="12" width="12" x="120" y="35"></rect>
+<rect height="10" width="10" x="70" y="55"></rect>
+<rect height="10" width="16" x="88" y="55"></rect>
+<rect height="10" width="10" x="112" y="55"></rect>
+<rect height="10" width="18" x="130" y="55"></rect>
+<!-- Center decorative logo spot -->
+<rect fill="#ffffff" height="50" rx="8" width="50" x="75" y="75"></rect>
+<circle cx="100" cy="100" fill="#c59b27" r="18"></circle>
+<path d="M94 100 L98 104 L107 94" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<!-- Lower quadrants -->
+<rect height="20" width="12" x="70" y="135"></rect>
+<rect height="10" width="14" x="90" y="135"></rect>
+<rect height="12" width="20" x="115" y="135"></rect>
+<rect height="20" width="12" x="145" y="135"></rect>
+<rect height="12" width="22" x="165" y="135"></rect>
+<rect height="12" width="20" x="70" y="165"></rect>
+<rect height="14" width="12" x="100" y="165"></rect>
+<rect height="24" width="18" x="120" y="160"></rect>
+<rect height="14" width="30" x="145" y="165"></rect>
+</svg>
+<div class="absolute bottom-3 bg-surface/95 text-on-surface px-2.5 py-1 rounded text-[10px] font-mono shadow-sm">
+                  TOTAL: Rp 181.500
+                </div>
+</div>
+<!-- Supported E-Wallets & Banks -->
+<div class="flex items-center justify-center gap-3 mt-4 pt-3 w-full border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Mendukung:</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-semibold">BCA</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-semibold">GoPay</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-semibold">OVO</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-semibold">ShopeePay</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-semibold">Dana</span>
+</div>
+</div>
+<!-- Download QRIS Action -->
+<div class="mt-4 flex flex-wrap gap-3 justify-center">
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="downloadQrisSimulate()">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Unduh Gambar QRIS</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="copyAmount()">
+<span class="material-symbols-outlined text-base">content_copy</span>
+<span>Salin Nominal (181500)</span>
+</button>
+</div>
+</div>
+<!-- Dynamic Panel 2: Virtual Account Content -->
+<div class="tab-panel hidden p-6 sm:p-8 flex flex-col" id="panel-va">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Pilih Bank Virtual Account</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Bayar melalui ATM, m-Banking, atau Internet Banking dengan verifikasi otomatis instan.</p>
+<!-- Bank Selector Cards -->
+<div class="space-y-3 mb-6">
+<!-- BCA (Default Active) -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border-2 border-primary-container shadow-sm flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-12 h-9 rounded bg-surface-container flex items-center justify-center font-bold text-on-surface font-label-md text-label-md">
+                    BCA
+                  </div>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">BCA Virtual Account</span>
+<span class="font-body-sm text-body-sm text-tertiary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Verifikasi Otomatis
+                    </span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-xl">radio_button_checked</span>
+</div>
+<!-- Mandiri -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-12 h-9 rounded bg-surface-container-highest flex items-center justify-center font-bold text-on-surface font-label-md text-label-md">
+                    MANDIRI
+                  </div>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">Mandiri Bill Payment</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kode Perusahaan: 70012</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/40 text-xl">radio_button_unchecked</span>
+</div>
+<!-- BNI -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-12 h-9 rounded bg-surface-container-highest flex items-center justify-center font-bold text-on-surface font-label-md text-label-md">
+                    BNI
+                  </div>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">BNI Virtual Account</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Otomatis 24 Jam</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/40 text-xl">radio_button_unchecked</span>
+</div>
+<!-- BRI -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-12 h-9 rounded bg-surface-container-highest flex items-center justify-center font-bold text-on-surface font-label-md text-label-md">
+                    BRI
+                  </div>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">BRIVA (BRI Virtual Account)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Otomatis 24 Jam</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/40 text-xl">radio_button_unchecked</span>
+</div>
+</div>
+<!-- Active VA Detail Box -->
+<div class="bg-surface-container-low p-5 rounded-xl mb-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wide mb-1">Nomor BCA Virtual Account:</span>
+<div class="flex items-center justify-between gap-3">
+<span class="font-mono text-xl sm:text-2xl font-bold text-on-surface tracking-wider" id="vaNumber">8801 2948 1029 4810</span>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold hover:brightness-105 active:scale-95 transition-all shadow-sm" onclick="copyVA()">
+<span class="material-symbols-outlined text-base">content_copy</span>
+<span id="vaBtnText">Salin Nomor VA</span>
+</button>
+</div>
+<div class="mt-3 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-3 border-t border-surface-container">
+<span>Nama Akun: <strong>MIDTRANS - MOMENBAHAGIA</strong></span>
+<span>Batas Waktu: <strong>Besok, 23:59 WIB</strong></span>
+</div>
+</div>
+<!-- Instructions Collapsible -->
+<div class="bg-surface-container-lowest p-4 rounded-lg">
+<div class="font-label-md text-label-md font-semibold text-on-surface mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">info</span>
+                Petunjuk Pembayaran BCA Mobile
+              </div>
+<ol class="list-decimal list-inside space-y-1.5 font-body-sm text-body-sm text-on-surface-variant pl-1">
+<li>Buka aplikasi m-BCA, lalu pilih menu <strong>m-Transfer</strong>.</li>
+<li>Pilih <strong>BCA Virtual Account</strong>.</li>
+<li>Masukkan nomor Virtual Account <span class="font-mono font-semibold">8801294810294810</span> lalu klik Send.</li>
+<li>Pastikan rincian tagihan berjumlah <strong>Rp 181.500</strong> lalu masukkan PIN m-BCA Anda.</li>
+</ol>
+</div>
+</div>
+<!-- Dynamic Panel 3: Credit Card Content -->
+<div class="tab-panel hidden p-6 sm:p-8 flex flex-col" id="panel-cc">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">Kartu Kredit / Debit Online</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Mendukung kartu Visa, Mastercard, dan JCB berlogo 3D-Secure dengan proteksi OTP.</p>
+<form class="space-y-4" onsubmit="event.preventDefault(); simulatePayment();">
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1.5">Nomor Kartu Kredit / Debit</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low text-on-surface px-4 py-3 rounded-lg font-mono text-base focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container outline-none pr-24" maxlength="19" placeholder="4111 2222 3333 4444" type="text"/>
+<div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-xs font-bold text-on-surface">VISA</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-xs font-bold text-on-surface">MC</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1.5">Masa Berlaku (MM/YY)</label>
+<input class="w-full bg-surface-container-low text-on-surface px-4 py-3 rounded-lg font-mono text-base focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container outline-none" maxlength="5" placeholder="12 / 28" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1.5">Kode Keamanan CVV</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low text-on-surface px-4 py-3 rounded-lg font-mono text-base focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container outline-none" maxlength="4" placeholder="•••" type="password"/>
+<span class="material-symbols-outlined text-on-surface-variant/50 absolute right-3 top-1/2 -translate-y-1/2 text-lg">lock</span>
+</div>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1.5">Nama Pemegang Kartu</label>
+<input class="w-full bg-surface-container-low text-on-surface px-4 py-3 rounded-lg font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container outline-none" placeholder="Contoh: Raden Satria" type="text"/>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-tertiary text-lg">verified_user</span>
+<span>Enkripsi 3D Secure Midtrans menjamin OTP akan dikirimkan langsung ke nomor ponsel bank Anda.</span>
+</div>
+<button class="w-full py-3.5 bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-md text-label-md font-semibold rounded-lg shadow-md hover:brightness-105 active:scale-[0.99] transition-all flex items-center justify-center gap-2" onclick="simulatePayment()" type="button">
+<span class="material-symbols-outlined text-lg">lock</span>
+<span>Bayar Sekarang (Rp 181.500)</span>
+</button>
+</form>
+</div>
+<!-- Dynamic Panel 4: Convenience Store -->
+<div class="tab-panel hidden p-6 sm:p-8 flex flex-col" id="panel-cstore">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Gerai Retail / Minimarket</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Tunjukkan kode bayar ke kasir Indomaret, Ceriamart, atau Alfamart terdekat.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+<div class="p-4 rounded-xl bg-surface-container-lowest border-2 border-primary-container flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl text-secondary">store</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Indomaret</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Payment Code Instan</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary">radio_button_checked</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl text-on-surface-variant">local_convenience_store</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Alfamart</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Alfamidi / Dan+Dan</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/40">radio_button_unchecked</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-5 rounded-xl mb-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wide mb-1">Kode Pembayaran Indomaret:</span>
+<div class="flex items-center justify-between gap-3">
+<span class="font-mono text-xl sm:text-2xl font-bold text-on-surface tracking-wider">IDM-8910-3849-21</span>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-all" onclick="navigator.clipboard.writeText('IDM-8910-3849-21'); alert('Kode bayar Indomaret disalin!');">
+<span class="material-symbols-outlined text-base">content_copy</span>
+<span>Salin Kode</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Midtrans Status Bar & Manual Check Action Footer -->
+<div class="bg-surface-container-low p-6 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-surface-container">
+<div class="flex items-center gap-3">
+<div class="relative flex items-center justify-center" id="statusPulse">
+<span class="animate-ping absolute inline-flex h-3.5 w-3.5 rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface" id="statusTitle">Menunggu Pembayaran...</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant" id="statusSub">Sistem otomatis mendeteksi setiap 5 detik</div>
+</div>
+</div>
+<button class="w-full sm:w-auto px-6 py-3 rounded-lg bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-md text-label-md font-bold shadow-md hover:brightness-105 active:scale-95 transition-all flex items-center justify-center gap-2" id="btnCheckPayment" onclick="simulatePayment()">
+<span class="material-symbols-outlined text-lg">sync</span>
+<span>Saya Sudah Bayar (Cek Otomatis)</span>
+</button>
+</div>
+</div>
+<!-- Micro Information Strip -->
+<div class="flex flex-wrap items-center justify-between gap-4 px-2 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-base">verified</span>
+<span>Didukung Resmi oleh Bank Indonesia (QRIS) &amp; OJK</span>
+</div>
+<div class="flex items-center gap-4">
+<a class="hover:text-primary transition-colors" href="#">Butuh Bantuan Kasir?</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#">Kebijakan Pengembalian</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Payment Success Modal Overlay (Initially Hidden) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-4" id="successModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-md w-full p-6 sm:p-8 shadow-2xl text-center transform scale-95 transition-all duration-300">
+<div class="w-20 h-20 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center mx-auto mb-5">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase mb-2">
+          Pembayaran Sukses Terverifikasi
+        </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Selamat! Paket PRO Aktif</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+          Transaksi senilai <strong>Rp 181.500</strong> telah diterima oleh Midtrans. Fitur unlimited tamu dan domain khusus kini telah aktif pada dashboard Anda.
+        </p>
+<!-- Receipt Box -->
+<div class="bg-surface-container-low rounded-xl p-4 text-left space-y-2 mb-6 font-body-sm text-body-sm">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Order ID:</span>
+<span class="font-mono font-semibold text-on-surface">MB-INV-992014</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Metode:</span>
+<span class="font-semibold text-on-surface">GoPay / QRIS Dinamis</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Waktu Transaksi:</span>
+<span class="font-semibold text-on-surface">Hari ini, Barusan</span>
+</div>
+<div class="flex justify-between pt-2 border-t border-surface-container font-label-md text-label-md">
+<span class="font-bold text-on-surface">Status Paket:</span>
+<span class="font-bold text-tertiary">AKTIF SELAMANYA</span>
+</div>
+</div>
+<div class="flex flex-col gap-2.5">
+<a class="w-full py-3.5 rounded-lg bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-md text-label-md font-bold shadow-md hover:brightness-105 transition-all block" data-path="buat-undangan" href="#">
+            Lanjut Edit Undangan Sekarang
+          </a>
+<button class="w-full py-3 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors" onclick="closeSuccessModal()">
+            Tutup Dialog
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Logic -->
+<script>
+    // Tab Switching Logic
+    function switchTab(tabName) {
+      // Hide all panels
+      const panels = document.querySelectorAll('.tab-panel');
+      panels.forEach(p => p.classList.add('hidden'));
+
+      // Reset all buttons styling
+      const tabs = document.querySelectorAll('.pay-tab');
+      tabs.forEach(t => {
+        t.className = 'pay-tab flex-1 min-w-[130px] flex items-center justify-center gap-2 py-3 px-3 rounded-lg text-left transition-all bg-surface-container-low text-on-surface hover:bg-surface-container';
+      });
+
+      // Show selected panel
+      const targetPanel = document.getElementById('panel-' + tabName);
+      if (targetPanel) {
+        targetPanel.classList.remove('hidden');
+      }
+
+      // Highlight selected tab
+      const activeTab = document.getElementById('tab-' + tabName);
+      if (activeTab) {
+        activeTab.className = 'pay-tab flex-1 min-w-[130px] flex items-center justify-center gap-2 py-3 px-3 rounded-lg text-left transition-all bg-primary-fixed text-on-primary-fixed font-semibold shadow-sm';
+      }
+    }
+
+    // VA Copy Simulation
+    function copyVA() {
+      const vaText = document.getElementById('vaNumber').innerText.replace(/\s+/g, '');
+      navigator.clipboard.writeText(vaText).then(() => {
+        const btnText = document.getElementById('vaBtnText');
+        const oldText = btnText.innerText;
+        btnText.innerText = 'Tersalin!';
+        setTimeout(() => {
+          btnText.innerText = oldText;
+        }, 2000);
+      });
+    }
+
+    // Copy Amount Simulation
+    function copyAmount() {
+      navigator.clipboard.writeText('181500').then(() => {
+        alert('Nominal Rp 181.500 berhasil disalin ke clipboard.');
+      });
+    }
+
+    // Download QRIS Simulation
+    function downloadQrisSimulate() {
+      alert('QRIS MomenBahagia tersimpan di perangkat Anda. Silakan unggah pada menu Bayar aplikasi perbankan.');
+    }
+
+    // Payment Simulation Check
+    function simulatePayment() {
+      const btn = document.getElementById('btnCheckPayment');
+      const oldContent = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-lg animate-spin">refresh</span><span>Memverifikasi Bank...</span>';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        btn.innerHTML = oldContent;
+        btn.disabled = false;
+        
+        // Show success modal
+        const modal = document.getElementById('successModal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }, 1400);
+    }
+
+    function closeSuccessModal() {
+      const modal = document.getElementById('successModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Countdown Timer Simulation
+    (function initTimer() {
+      let seconds = 24 * 3600 - 15;
+      const el = document.getElementById('countdownTimer');
+      if (!el) return;
+
+      setInterval(() => {
+        if (seconds <= 0) return;
+        seconds--;
+        const h = Math.floor(seconds / 3600);
+        const m = Math.floor((seconds % 3600) / 60);
+        const s = seconds % 60;
+        el.innerText = [
+          h.toString().padStart(2, '0'),
+          m.toString().padStart(2, '0'),
+          s.toString().padStart(2, '0')
+        ].join(':');
+      }, 1000);
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/30 pt-16 pb-12 mt-20"><div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-10"><div class="space-y-4 md:col-span-1"><div class="flex items-center gap-3"><img alt="MomenBahagia Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UwwglnVkj4xbkW_O0Hh2eK7biDwrwl9nm0ag_dt6MPBhedzGz_JaoLKIS_m5cZzT7GV4GfLxrenRuLDU5-d2mXLYHXSaZtwGuWPL_qPaRZeRfSwIKqqw1wfoCH13h-4VczJrOSXR7jBl5hV33fwER_3x2vBSBlurrEKPvMDdDq9fZL4C9qWyz1GeMOUN-N1xTEH2QD8I4g31vzRT5Og2tuV2x53dPbQyADZcuI-48"/><span class="font-headline-sm text-headline-sm text-primary font-bold">MomenBahagia</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Platform undangan digital pernikahan dan perayaan istimewa dengan estetika modern, kemewahan halus, dan kemudahan RSVP terpadu.</p></div><div class="space-y-3"><h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Eksplorasi</h3><ul class="space-y-2 font-body-sm text-body-sm"><li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="katalog-template" href="#">Katalog Template</a></li><li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="fitur" href="#">Fitur &amp; Inovasi</a></li><li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="harga" href="#">Paket Harga</a></li></ul></div><div class="space-y-3"><h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Bantuan</h3><ul class="space-y-2 font-body-sm text-body-sm"><li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Panduan Pengguna</a></li><li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Integrasi WhatsApp</a></li><li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Hubungi Kami</a></li></ul></div><div class="space-y-3"><h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Keamanan &amp; Privasi</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Data acara dan tamu Anda terlindungi dengan enkripsi mutakhir dan privasi penuh.</p></div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 mt-12 pt-6 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 MomenBahagia. Seluruh hak cipta dilindungi.</p><div class="flex items-center gap-6"><a class="hover:text-primary transition-colors" href="#">Syarat &amp; Ketentuan</a><a class="hover:text-primary transition-colors" href="#">Kebijakan Privasi</a></div></div></footer></body></html>
